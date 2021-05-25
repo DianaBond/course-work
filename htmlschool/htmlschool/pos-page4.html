@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <title>HtmlSchool</title>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="main_menu_area" style="background: url(img/home-slider/9.png)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">Про нас</a></li>
+                <li class="nav-item active"><a class="nav-link" href="manual.html">Посібник</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="banner_area" style="background: url(img/back_2.png)">
+    <div class="container">
+        <div class="banner_inner_text">
+            <h2>Посібник</h2>
+            <p>Приємного дозвілля</p>
+        </div>
+    </div>
+</section>
+
+<section class="blog_main_area p_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="single_blog_inner">
+                    <div class="s_blog_main">
+                        <div class="blog_text">
+                            <h4>HTML-атрибути</h4>
+                            <p>HTML-атрибути повідомляють браузеру, яким чином повинен відображатися той чи інший елемент сторінки. Атрибути дозволяють зробити більш різноманітними зовнішній вигляд інформації, що додається за допомогою однакових тегів. </p>
+                            <p> Значення атрибута полягає в лапки <code>""</code>. Назви і значення атрибутів не чутливі до регістру, але, тим не менш, рекомендується набирати їх в нижньому регістрі.</p>
+                            <br>
+                            <h2>Глобальні атрибути</h2>
+                            <br>
+                            <p>Глобальні атрибути, наведені в таблиці нижче, можуть бути використані для будь-якого HTML-елемента, хоча деякі з них можуть не надавати на елементи ніякого впливу. </p>
+                            <br>
+                            <table >
+                                <tr>
+                                    <th style="width:20%"><h5>Атрибут</h5></th>
+                                    <th><h5>Опис, прийняте значення</h5></th>
+                                </tr>
+                                <tr>
+                                    <td><kbd>accesskey</kbd></td>
+                                    <td>Генерує поєднання клавіш для доступу до поточного елементу. Складається з розділеного пробілами списку символів. Браузер в першу чергу вибирає ті клавіші, які існують на розкладці клавіатури. Застосовується до наступних елементів: <kbd>&#60;a&#62;</kbd>, <kbd>&#60;area&#62;</kbd>, <kbd>&#60;button&#62;</kbd>, <kbd>&#60;input&#62;</kbd>, <kbd>&#60;label&#62;</kbd>, <kbd>&#60;legend&#62;</kbd>, <kbd>&#60;textarea&#62;</kbd>.
+                                        <br>Прийняті значення: перелік назв клавіш.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>class</kbd></td>
+                                    <td>Визначає ім'я класу для елемента (використовується для визначення класу в таблиці стилів).<br />
+                                        Прийняті значення: імя класа.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>contenteditable</kbd></td>
+                                    <td>Визначає, чи може користувач редагувати вміст (контент). Дозволяє перетворити будь-яке поле HTML в редагований елемент.<br />
+                                        Прийняті значення: <kbd>true/false</kbd>.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>dir</kbd></td>
+                                    <td>Визначає напрямок тексту контенту в елементах <kbd>&#60;bdo&#62;</kbd> и <kbd>&#60;bdi&#62;</kbd>.<br />
+                                        Прийняті значення: <kbd>ltr/rtl/auto</kbd>.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>draggable</kbd></td>
+                                    <td>Визначає, чи може користувач перетягнути елемент.<br />
+                                        Прийняті значення: <kbd>true/false/auto</kbd>.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>hidden</kbd></td>
+                                    <td>Вказує на те, що елемент повинен бути прихований.<br />
+                                        Прийняті значення: <kbd>hidden</kbd>.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>id</kbd></td>
+                                    <td>Визначає унікальний ідентифікатор елемента.<br />
+                                        Прийняті значення: <kbd>id</kbd> &#8212; идентификатор элемента.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>lang</kbd></td>
+                                    <td>Визначає код мови вмісту (контенту) в елементі.<br />
+                                        Прийняті значення: код язика.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>spellcheck</kbd></td>
+                                    <td>Вказує, чи підлягає вміст елемента перевірці орфографії і граматики.<br />
+                                        Прийняті значення: <kbd>true/false</kbd>.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>style</kbd></td>
+                                    <td>Упоказувала на код CSS, яка застосовується для оформлення елемента.<br />
+                                        Прийняті значення: код CSS.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>tabindex</kbd></td>
+                                    <td>Визначає порядок переходу до елементу за допомогою клавіші TAB.<br />
+                                        Прийняті значення: порядковий номер.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>title</kbd></td>
+                                    <td>Визначає додаткову інформацію про елемент, задаючи підказку для сторінки.<br />
+                                        Прийняті значення: текст.</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>translate</kbd></td>
+                                    <td>Дозволяє або забороняє переклад тексту всередині елемента.<br />
+                                        Прийняті значення:<kbd>yes/no</kbd>.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footr_area">
+    <div class="footer_copyright" style="background: url(img/home-slider/9.png)">
+        <div class="container">
+            <div class="float-sm-left">
+                <h5>
+                    Бондар Діана &copy; Всі права захищені</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/counterup/jquery.waypoints.min.js"></script>
+<script src="vendors/counterup/jquery.counterup.min.js"></script>
+<script src="vendors/counterup/apear.js"></script>
+<script src="vendors/counterup/countto.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

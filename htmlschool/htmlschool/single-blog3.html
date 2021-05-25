@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <title>HtmlSchool</title>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="main_menu_area" style="background: url(img/home-slider/9.png)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="manual.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
+                <li class="nav-item active"><a class="nav-link" href="blog.html">Блог</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_inner_text">
+            <h2>Блог</h2>
+            <p>Приємного дозвілля</p>
+        </div>
+    </div>
+</section>
+
+<section class="blog_main_area p_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="single_blog_inner">
+                    <div class="s_blog_main">
+                        <div class="blog_img">
+                            <img class="img-fluid" src="img/blog/blog_3.jpeg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="blog_text">
+                            <h4>5 розширень VS Code для продуктивної роботи</h4>
+                            <div class="blog_author">
+                                <a>By Oleg Ptash</a >
+                                <a>Інструменти</a>
+                            </div>
+                            <p>Редактор коду - частина вашого робочого місця і програма, в якій ви проводите більше всього часу під час роботи (ну, не рахуючи браузера зі StackOverflow). А робоче місце повинно не заважати продуктивно працювати. Сам по собі редактор - просто поле для введення тексту, він не вміє економити час. Але розширення цілком допомагають зробити роботу простіше і ефективніше.</p>
+                            <p> Ми запитали у фронтенд-розробників, якими плагінами VS Code вони користуються для продуктивної роботи, і ділимося добіркою з вами.</p>
+                            <br>
+                            <h2>Snippets - економимо час на написання того, що вже давно написано за вас</h2>
+                            <br>
+                            <p>Сніппети - скорочення для часто використовуваних фрагментів коду. Їх потрібно спочатку завчити, але після цього робота сильно прискорюється. Наприклад, вам більше не потрібно щоразу писати <code>const packageName = require ('packageName');</code> - достатньо написати <code>req</code> і натиснути клавішу <code>tab</code>. І таких прикладів багато.</p>
+                            <p>Основні сніппети, з яких варто почати вивчення - це сніппети для HTML і JavaScript. Якщо втягнетеся - легко знайдете розширення і для React, і для Vue, і для будь-якого популярного фреймворку або мови. Рекомендуємо.</p>
+                            <br>
+                            <h2>Settings Sync - економимо час на налаштування редактора коду</h2>
+                            <br>
+                            <p>Якщо ви стикалися з тим, що на кожному новому комп'ютері потрібно налаштовувати редактор коду заново, то знаєте, як це може бути незручно. І якщо на новій Windows або переустановленном браузері можна просто увійти в обліковий запис, то в VS Code з цим трохи складніше.</p>
+                            <p>Але це взагалі не проблема - плагін Settings Sync допоможе синхронізувати налаштування через профіль на GitHub (який все одно є у всіх розробників). Якщо у вас ще ні - зареєструйтеся, портфоліо на гітхабе допомагає знайти роботу.</p>
+                            <p>Налаштування проста - досить увійти через профіль на гітхабе і синхронізувати все, що ви хочете синхронізувати.</p>
+                            <br>
+
+                            <h2>LiveServer - економимо час на оновленні сторінки</h2>
+                            <br>
+                            <p>Якщо з розміткою все зрозуміло, то відразу дивитися сторінку зі стилями і JavaScript краще в браузері. Але якщо оновлювати сторінку вручну не хочеться, використовуйте розширення LiveServer.</p>
+                            <br>
+                            <img src=img/blog/blog3_1.gif style="width: 1000px; height: 600px;">
+                            <br>
+                            <br>
+                            <h2>Auto Rename Tag - економимо час на пошуку парних тегів</h2>
+                            <br>
+                            <p>Буває, через незнання розмітили всю сторінку через div, а потім прочитали статтю про те, чому так робити не треба і вирішили все переробити. Але шукати, де один div відкривається, а потім закривається, а потім знову відкривається, буває складно.</p>
+                            <br>
+                            <img src=img/blog/blog3_2.gif alt="гиф" style="width: 1000px; height: 600px;">
+                            <br>
+                            <br>
+                            <p>У вирішенні питання допоможе розширення Auto Rename Tag - з ним можна швидко перейменувати тільки відкриває тег, а закриває знайдеться сам і перейменується автоматично. І ніяких більше Дивов, тільки семантика, доступність і радість.</p>
+                            <br>
+                            <h2>Colorize - економимо час (і нерви) на перевірці, який там колір в макеті</h2>
+                            <br>
+                            <p>Буває так - написали стилі, все працює, все добре. А потім через якийсь час замовник попросив додати побільше червоненького. Ви відкриваєте файл, а перед очима тільки # E54320, # DA2F0A і # F0890E. Значить, потрібно йти і гуглити, що це взагалі за кольору, і кому прийшло в голову їх так назвати. Довго і незручно.</p>
+                            <br>
+                            <img src=img/blog/blog3_3.gif alt="гиф" style="width: 1000px; height: 600px;">
+                            <br>
+                            <br>
+                            <p>Розширення Colorize вирішує цю проблему - ви відразу бачите, які там кольори у вашому CSS, Less або SASS-файлі. Зручно, добре, лайк від редакції.</p>
+
+                        </div>
+                    </div>
+                    <div class="blog_author">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img class="rounded-circle" src="img/team/people/people-2.jpg" alt="img" style="width: 100px; height: 100px;">
+                            </div>
+                            <div class="media-body">
+                                <h4> Oleg Ptash, <span>Автор</span></h4>
+                                <p>Я підібрав для вас 5 розширень для продуктивної роботи. Гадаю для вас це буде цікаво причитати. Якщо у вас є питання, то пишить нам на email. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footr_area">
+    <div class="footer_copyright" style="background: url(img/home-slider/9.png)">
+        <div class="container">
+            <div class="float-sm-left">
+                <h5>
+                    Бондар Діана &copy; Всі права захищені</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/counterup/jquery.waypoints.min.js"></script>
+<script src="vendors/counterup/jquery.counterup.min.js"></script>
+<script src="vendors/counterup/apear.js"></script>
+<script src="vendors/counterup/countto.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
+

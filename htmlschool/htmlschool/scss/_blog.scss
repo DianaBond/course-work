@@ -1,0 +1,199 @@
+.blog_main_area{
+    
+}
+.blog_main_inner{
+}
+.blog_img{
+    position: relative;
+    .blog_date{
+        position: absolute;
+        left: 0px;
+        top: 40px;
+        max-width: 120px;
+        width: 100%;
+        background: #6fbcfe;
+        background: -moz-linear-gradient(left, #6fbcfe 0%, #9b8aff 100%);
+        background: -webkit-linear-gradient(left, #6fbcfe 0%,#9b8aff 100%);
+        background: linear-gradient(to right, #6fbcfe 0%,#9b8aff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fbcfe', endColorstr='#9b8aff',GradientType=1 );
+        text-align: center;
+        color: #fff;
+        padding: 18px 0px 16px 0px;
+        h4{
+            font-size: 36px;
+            font-family: $rob;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        h5{
+            font-size: 12px;
+            font-weight: 500;
+            font-family: $rob;
+        }
+    }
+}
+.blog_text{
+    padding: 40px 30px 65px 30px;
+    h4{
+        font-size: 24px;
+        font-family: $rob;
+        font-weight: bold;
+        color: $dip;
+        padding-bottom: 5px;
+    }
+    .blog_author{
+        padding-bottom: 30px;
+        a{
+            font-size: 12px;
+            font-family: $rob;
+            font-weight: 500;
+            color: $pfont;
+            margin-right: 20px;
+            position: relative;
+            &:before{
+                content: "|";
+                position: absolute;
+                right: -13px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $pfont;
+            }
+            &:last-child{
+                margin-right: 0px;
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 15px;
+        font-family: $rob;
+        font-weight: 500;
+        line-height: 28px;
+        color: $pfont;
+        & + p{
+            padding-top: 30px;
+        }
+    }
+    .more_btn{
+        margin-top: 45px;
+    }
+}
+.blog_main_item{
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+    margin-bottom: 100px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+.pagination_area{
+    padding-top: 100px;
+    .pagination{
+        li{
+            margin-right: 10px;
+            a{
+                border-radius: 0px;
+                border: none;
+                background: transparent;
+                font-size: 14px;
+                font-family: $rob;
+                font-weight: bold;
+                color: $pfont;
+                padding: 0px;
+                @include transition;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover, &.active{
+                a{
+                    color: $dip;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+.blog_right_sidebar{}
+.r_widget{
+    margin-bottom: 80px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+.r_w_title{
+    padding-bottom: 25px;
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $rob;
+        color: $dip;
+    }
+}
+.quote_widget{
+    p{
+        font-family: $rob;
+        font-weight: 500;
+        font-style: italic;
+        color: $pfont;
+        line-height: 30px;
+        font-size: 15px;
+        padding-top: 25px;
+    }
+}
+
+.s_blog_social{
+    padding-bottom: 80px;
+    padding-left: 30px;
+    h3{
+        font-size: 18px;
+        color: #0b1033;
+        font-family: $rob;
+        font-weight: 500;
+        display: inline-block;
+    }
+    ul{
+        display: inline-block;
+        li{
+            display: inline-block;
+            margin-left: 30px;
+            a{
+                font-size: 12px;
+                color: #0b1033;
+            }
+            &:first-child{
+                margin-left: 40px;
+            }
+        }
+    }
+}
+.blog_author{
+    .media{
+        vertical-align: middle;
+        .d-flex{
+            padding-right: 20px;
+            align-self: center;
+        }
+        .media-body{
+            h4{
+                font-size: 18px;
+                font-family: $rob;
+                font-weight: 500;
+                padding-bottom: 25px;
+                span{
+                    color: #7c8d93;
+                }
+            }
+            p{
+                font-size: 15px;
+                line-height: 28px;
+                color: $pfont;
+                font-family: $rob;
+                font-weight: 500;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <title>HtmlSchool</title>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header class="main_menu_area" style="background: url(img/home-slider/9.png)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">Про нас</a></li>
+                <li class="nav-item active"><a class="nav-link" href="manual.html">Посібник</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Блог</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="banner_area" style="background: url(img/back_2.png)">
+    <div class="container">
+        <div class="banner_inner_text">
+            <h2>Посібник</h2>
+            <p>Приємного дозвілля</p>
+        </div>
+    </div>
+</section>
+
+<section class="blog_main_area p_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="single_blog_inner">
+                    <div class="s_blog_main">
+                        <div class="blog_text">
+                            <h4>Структура HTML-документа</h4>
+                            <br>
+                            <p>Мова HTML дотримується правил, які містяться у файлі оголошення типу документа (Document Type Definition, або DTD). DTD є XML-документ, що визначає, які теги, атрибути і їх значення дійсні для конкретного типу HTML. Для кожної версії HTML є свій DTD. </p>
+                            <p> DOCTYPE відповідає за коректне відображення веб-сторінки браузером. DOCTYPE визначає не тільки версію HTML (наприклад, html), але і відповідний DTD-файл в Інтернеті.</p>
+                            <br>
+                            <pre><code style="background-color: #f8d7da;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt; &lt;!-- Техническая информация о документе --&gt;
+&lt;meta charset="UTF-8"&gt; &lt;!-- Определяем кодировку символов документа --&gt;
+&lt;title&gt;...&lt;/title&gt; &lt;!-- Задаем заголовок документа --&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css"&gt; &lt;!-- Подключаем внешнюю таблицу стилей --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt; &lt;!-- Подключаем сценарии --&gt;
+&lt;/head&gt;
+&lt;body&gt; &lt;!-- Основная часть документа --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            <p>Елементи, що знаходяться всередині елемента <code>html</code>, утворюють дерево документа, так звану об'єктну модель документа, DOM (document object model). При цьому елемент <code>html</code> є кореневим елементом.</p>
+                            <br>
+                            <img src="img/DOM.png">
+                            <br>
+                            <br>
+                            <p>Щоб розібратися у взаємодії елементів веб-сторінки, необхідно розглянути так звані <strong style="color: #0b0b0b">«родинні стосунки»</strong> між елементами. Відносини між множинними вкладеними елементами поділяються на батьківські, дочірні і сестринські.</p>
+                            <br>
+                            <ul>
+                                <li style="color: mediumslateblue;">Предок - елемент, який містить в собі інші елементи. На малюнку предком для всіх елементів є <kbd style="background-color: #998dff">&lt;html&gt;</kbd>. У той же час елемент <kbd style="background-color: #998dff">&lt;body&gt;</kbd> є предком для всіх розміщених в ньому елементів: <kbd style="background-color: #998dff">&lt;h1&gt;</kbd>, <kbd style="background-color: #998dff">&lt;p&gt;</kbd>, <kbd style="background-color: #998dff">&lt;span&gt;</kbd>, <kbd style="background-color: #998dff">&lt;nav&gt;</kbd> тощо.</li>
+                                <br>
+                                <li style="color: mediumslateblue;">Нащадок - елемент, розташований усередині одного або більше типів елементів. наприклад, <kbd style="background-color: #998dff">&lt;body&gt;</kbd> є нащадком <kbd style="background-color: #998dff">&lt;html&gt;</kbd>, а елемент <kbd style="background-color: #998dff">&lt;p&gt;</kbd> является нащадком одночасно для <kbd style="background-color: #998dff">&lt;body&gt;</kbd> і <kbd style="background-color: #998dff">&lt;html&gt;</kbd>.</li>
+                                <br>
+                                <li style="color: mediumslateblue;">Батьківський елемент - елемент, пов'язаний з іншими елементами нижчого рівня, і що знаходиться на дереві вище їх. На малюнку <kbd style="background-color: #998dff">&lt;html&gt;</kbd> є батьківським тільки для <kbd style="background-color: #998dff">&lt;head&gt;</kbd> і <kbd style="background-color: #998dff">&lt;body&gt;</kbd>. Елемент <kbd style="background-color: #998dff">&lt;p&gt;</kbd> є батьківським тільки для <kbd style="background-color: #998dff">&lt;span&gt;</kbd>.</li>
+                                <br>
+                                <li style="color: mediumslateblue;">Дочірній елемент - елемент, безпосередньо підлеглий іншому елементу більш високого рівня. На малюнку тільки елементи <kbd style="background-color: #998dff">&lt;h1&gt;</kbd>, <kbd style="background-color: #998dff">&lt;h2&gt;</kbd>, <kbd style="background-color: #998dff">&lt;p&gt;</kbd> і <kbd style="background-color: #998dff">&lt;nav&gt;</kbd> є дочірніми по відношенню до <kbd style="background-color: #998dff">&lt;body&gt;</kbd>.</li>
+                                <br>
+                                <li style="color: mediumslateblue;">Сестринський елемент - елемент, який має загальний батьківський елемент з даним, так звані елементи одного рівня. На малюнку  <kbd style="background-color: #998dff">&lt;head&gt;</kbd> і <kbd style="background-color: #998dff">&lt;body&gt;</kbd> &#8212; елементи одного рівня, так само як і елементи <kbd style="background-color: #998dff">&lt;h1&gt;</kbd>, <kbd style="background-color: #998dff">&lt;h2&gt;</kbd> і <kbd style="background-color: #998dff">&lt;p&gt;</kbd> є між собою сестринськими.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footr_area">
+    <div class="footer_copyright" style="background: url(img/home-slider/9.png)">
+        <div class="container">
+            <div class="float-sm-left">
+                <h5>
+                    Бондар Діана &copy; Всі права захищені</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/counterup/jquery.waypoints.min.js"></script>
+<script src="vendors/counterup/jquery.counterup.min.js"></script>
+<script src="vendors/counterup/apear.js"></script>
+<script src="vendors/counterup/countto.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
